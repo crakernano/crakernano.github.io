@@ -1,3 +1,26 @@
 body{
   background-color: #000;
 }
+
+.card{
+    min-height: 420px;
+}
+
+.card-text{
+  height: 72px;
+}
+
+.header-titles{
+  margin-left: 20%;
+  margin-top: 6rem;
+  color: #FFF;
+  font-size: 5rem;
+}
+
+.header-titles h2{
+  font-size: 4rem;
+}
+.header-titles h4{
+  margin-left: 2%;
+  font-size: 2rem;
+}
