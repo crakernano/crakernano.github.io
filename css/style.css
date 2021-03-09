@@ -10,6 +10,10 @@ body{
   height: 72px;
 }
 
+.ci-text{
+  height: 20px;
+}
+
 .header-titles{
   margin-left: 20%;
   margin-top: 6rem;
