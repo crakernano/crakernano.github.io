@@ -1,5 +1,6 @@
 body{
   background-color: #000;
+  overflow-x: hidden;
 }
 
 .card{
@@ -27,4 +28,19 @@ body{
 .header-titles h4{
   margin-left: 2%;
   font-size: 2rem;
+}
+
+.sites-title{
+    margin-bottom: 2rem;
+    letter-spacing: -0.03em;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.1),0 0 5px rgba(181,232,83,0.1),0 0 10px rgba(181,232,83,0.1);
+}
+
+
+figure{
+    color: #FFF;
+}
+
+figcaption{
+    margin-top: 1rem;
 }
