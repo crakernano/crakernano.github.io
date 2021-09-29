@@ -1,428 +1,1549 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.80.0">
-    <title>Portfolio · CrakerNano</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>David Martín Peral</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Crakernano's Personal web" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
+    <meta name="author" content="crakernano" />
     <link rel="shortcut icon" href="img/favicon.ico">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
 
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 
-
-    <!-- Bootstrap core CSS -->
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<link href="css/style.css" rel="stylesheet">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-<meta name="theme-color" content="#7952b3">
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-
+    <script src="js/modernizr.custom.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
   </head>
+
   <body>
+    <!-- Animated Background -->
+    <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
+    <!-- /Animated Background -->
 
-<header>
-
-
-</header>
-
-<main>
-
-  <section>
-    <div class="animate__fadeIn">
-    <div class="row">
-      <div class="col-sm-3 col-md-2"> <img src="img/avatar.png" alt="Crakernano"></div>
-      <div class="col-sm-7 offset-sm-2 col-md-10 offset-md-0" style="box-shadow: 20px 1px 10px white;">
-        <div class="header-titles">
-          <h2>David Martín Peral</h2>
-          <h4>Developer</h4>
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
         </div>
       </div>
     </div>
-    </div>
-  </section>
+    <!-- /Loading animation -->
 
-  <div class="album py-5">
-    <div class="container">
+    <div class="page">
+      <div class="page-content">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <!-- Proyecto 1 -->
-        <div class="col">
-      <div class="animate__bounceIn">
-          <div class="card shadow-sm">
-          <!--<img src="img/hermes.jpg" height="225px"/>-->
-          <img src="img/undraw_contact_us_15o2.svg">
-            <div class="card-body">
-              <h5 class="card-title">Hermes</h5>
-              <p class="card-text">Gestor de comunicaciones. Permite enviar mensajes mediante distintos medios (Slack, e-mail, Telegram, Firebase...).</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hermesModal" data-bs-whatever="@mdo">Saber Más</button>
-                </div>
-                <a href="https://github.com/Trastejant/Hermes" target="_blank" style="color:black;">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                  </svg>
-                </a>
-                <a href="https://trastejant.github.io/hermes/" target="_blank" style="color:black"><img src="img/website.svg" width="32px"/> </a>
+          <header id="site_header" class="header mobile-menu-hide">
+            <div class="header-content">
+              <div class="header-photo">
+                <img src="img/avatar.png" alt="Alex Smith">
+              </div>
+              <div class="header-titles">
+                <h2>David Martín Peral</h2>
+                <h4>SRE & Developer</h4>
               </div>
             </div>
-          </div>
-          </div>
-        </div>
 
-        <!-- Fin del Proyecto 1 -->
-
-        <!-- Proyecto 2 -->
-        <div class="col">
-          <div class="animate__bounceIn">
-          <div class="card shadow-sm">
-              <img src="img/undraw_circuit_board_4c4d.svg" />
-            <div class="card-body">
-              <h5 class="card-title">Jarwis</h5>
-              <p class="card-text">Domotización economica y open source.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jarwisModal" data-bs-whatever="@mdo">Saber Más</button>
-                </div>
-                <a href="https://github.com/Trastejant/Jarwis" target="_blank" style="color:black">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                  </svg>
+            <ul class="main-menu">
+              <li class="active">
+                <a href="#home" class="nav-anim">
+                  <span class="menu-icon lnr lnr-home"></span>
+                  <span class="link-text">Home</span>
                 </a>
-                <a href="https://trastejant.github.io/jarwis/" target="_blank" style="color:black"><img src="img/website.svg" width="32px"/> </a>
-              </div>
+              </li>
+              <li>
+                <a href="#about-me" class="nav-anim">
+                  <span class="menu-icon lnr lnr-user"></span>
+                  <span class="link-text">About Me</span>
+                </a>
+              </li>
+              <li>
+                <a href="#resume" class="nav-anim">
+                  <span class="menu-icon lnr lnr-graduation-hat"></span>
+                  <span class="link-text">Resume</span>
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio" class="nav-anim">
+                  <span class="menu-icon lnr lnr-briefcase"></span>
+                  <span class="link-text">Portfolio</span>
+                </a>
+              </li>
+              <li>
+                <a href="#blog" class="nav-anim">
+                  <span class="menu-icon lnr lnr-book"></span>
+                  <span class="link-text">Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-anim">
+                  <span class="menu-icon lnr lnr-envelope"></span>
+                  <span class="link-text">Contact</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="social-links">
+              <ul>
+                <li><a href="https://es.linkedin.com/in/david-martin-peral-2870a161?trk=people-guest_people_search-card" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/crakernano" target="_blank"><i class="fab fa-gitlab"></i></a></li>
+                <li><a href="https://github.com/crakernano/" target="_blank"><i class="fab fa-github"></i></a></li>
+              </ul>
+            </div>
+<!--
+            <div class="header-buttons">
+              <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
+            </div>
+-->
+            <div class="copyrights">© 2021 All rights reserved.</div>
+          </header>
+
+          <!-- Mobile Navigation -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- End Mobile Navigation -->
+
+          <!-- Arrows Nav -->
+          <div class="lmpixels-arrows-nav">
+            <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+            <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+          </div>
+          <!-- End Arrows Nav -->
+
+          <div class="content-area">
+            <div class="animated-sections">
+              <!-- Home Subpage -->
+              <section data-id="home" class="animated-section start-page">
+                <div class="section-content vcentered">
+
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="title-block">
+                          <h2>David Martín Peral</h2>
+                          <div class="owl-carousel text-rotation">
+                            <div class="item">
+                              <div class="sp-subtitle">Developer</div>
+                            </div>
+
+                            <div class="item">
+                              <div class="sp-subtitle">SRE</div>
+                            </div>
+
+                            <div class="item">
+                              <div class="sp-subtitle">Communicator</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </section>
+              <!-- End of Home Subpage -->
+
+              <!-- About Me Subpage -->
+              <section data-id="about-me" class="animated-section">
+                <div class="page-title">
+                  <h2>About <span>Me</span></h2>
+                </div>
+
+                <div class="section-content">
+                  <!-- Personal Information -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-7">
+                      <p>Desde muy pequeño siempre he sentido fascinación por la tecología y por el desarrollo de la misma. Empecé muy pronto a aprender a programar y
+                        mi interés por estos temas me ha llevado a mantenerme en un estado de aprendizaje continuo, investigando nuevas tecnologías, manteniendome al
+                        día de las últimas tendencias y en un proceso de mejora que nunca termina. Me considero afortunado de haber podido hacer de mi pasión mi profesión y
+                        a continuación resumo mis principales campos de experiencia.</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-5">
+                      <div class="info-list">
+                        <ul>
+                          <li>
+                            <span class="title">Age</span>
+                            <span class="value">32</span>
+                          </li>
+
+                          <li>
+                            <span class="title">Residence</span>
+                            <span class="value">Madrid, Spain</span>
+                          </li>
+
+
+
+                          <li>
+                            <span class="title">e-mail</span>
+                            <span class="value">crakernano@gmail.com</span>
+                          </li>
+
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Personal Information -->
+
+                  <div class="white-space-50"></div>
+
+                  <!-- Services -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>What <span>I Do</span></h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="col-inner">
+                        <div class="info-list-w-icon">
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="lnr lnr-laptop-phone"></i>
+                            </div>
+                            <div class="ci-text">
+                              <h4>Desarrollo</h4>
+                              <p>Como desarrollador he participado en multitud de proyectos, tanto propios como para clientes. Realizando el diseño y la ejecución de aplicaciones
+                              robustas, con un buen desempeño y mantenibles.</p>
+
+                              <!-- iconos de features -->
+                              <div class="row features">
+                                <div class="col">
+                                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Python"><img src="img/icon/python.ico" height="32px"></a>
+                                </div>
+                                <div class="col">
+                                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="PHP"><img src="img/icon/php.png" height="32px"></a>
+                                </div>
+                                <div class="col">
+                                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="JavaScript"><img src="img/icon/js.png" height="32px"></a>
+                                </div>
+                                <div class="col">
+                                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Java"><img src="img/icon/java.ico" height="32px"></a>
+                                </div>
+                                <div class="col">
+                                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Android Developer"><img src="img/icon/android.png" height="32px"></a>
+                                </div>
+                                <div class="col">
+                                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="C++"><img src="img/icon/c-programming.png" height="32px"></a>
+                                </div>
+                              </div>
+                              <!-- FIN iconos de features -->
+                            </div>
+                          </div>
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="lnr lnr-dice"></i>
+                            </div><div class="ci-text">
+                              <h4>Programación de microcontroladores</h4>
+                              <p>Tanto a nivel personal como profesional cuento con experiencia en el desarrollo de firmware, principalmente para microcontroladores de la familia
+                                ATMega y PIC.</p>
+                              <!-- iconos de features -->
+                              <div class="row features">
+                                <div class="col">
+                                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Arduino"><img src="img/icon/arduino.png" height="32px"></a>
+                                </div>
+                                <div class="col">
+                                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Microchip"><img src="img/icon/microchip.png" height="32px"></a>
+                                </div>
+                              </div>
+                              <!-- FIN iconos de features -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="col-inner">
+                        <div class="info-list-w-icon">
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="lnr lnr-cog"></i>
+                            </div>
+                            <div class="ci-text">
+                              <h4>Devops</h4>
+                              <p>La creación de flujos de trabajo ágiles y seguros es una de las mejores inversiones que se pueden realizar ante un proyecto.
+                                Mi experiencia en este campo se basa en crear sistemas de trabajo seguros, robustos y que permitan mantener una evolición continua de los proyectos</p>
+
+                              <!-- iconos de features -->
+                              <div class="row features">
+                                <div class="col">
+                                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Docker"><img src="img/icon/docker.png" height="32px"></a>
+                                </div>
+                                <div class="col">
+                                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Github"><img src="img/icon/github.png" height="32px"></a>
+                                </div>
+                                <div class="col">
+                                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Gitlab"><img src="img/icon/gitlab.png" height="32px"></a>
+                                </div>
+                                <div class="col">
+                                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Jenkins"><img src="img/icon/jenkins.png" height="32px"></a>
+                                </div>
+                                <div class="col">
+                                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Kubernetes"><img src="img/icon/kubernetes.png" height="32px"></a>
+                                </div>
+                              </div>
+                              <!-- FIN iconos de features -->
+                            </div>
+                          </div>
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="lnr lnr-heart-pulse"></i>
+                            </div>
+                            <div class="ci-text">
+                              <h4>Seguridad y observabilidad</h4>
+                              <p>Tan importante como el desarrollo de programas es la capacidad que se tenga para mantenerlos monitorizados y poder garantizar así su disponibilidad,
+                                encontrar posibles mejoras de rendimiento o de seguridad y medir su desempeño.</p>
+                            </div>
+                            <!-- iconos de features -->
+
+                            <div class="row features">
+                              <div class="col">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Grafana"><img src="img/icon/grafana.png" height="32px"></a>
+                              </div>
+                              <div class="col">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Jaeger"><img src="img/icon/jaeger.png" height="32px"></a>
+                              </div>
+                              <div class="col">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Loki"><img src="img/icon/loki.png" height="32px"></a>
+                              </div>
+                              <div class="col">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Prometheus"><img src="img/icon/prometheus.png" height="32px"></a>
+                              </div>
+                              <div class="col">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Trefik"><img src="img/icon/traefik.png" height="32px"></a>
+                              </div>
+                            </div>
+
+                            <!-- FIN iconos de features -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Services -->
+
+                  <div class="white-space-30"></div>
+
+
+
+                  <div class="white-space-50"></div>
+
+                  <!-- Clients -->
+                  <div class="row" >
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>Cilents</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row" style="background-color: white; border-radius: 100px">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="clients owl-carousel">
+
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/telefonica.png" alt="Logo">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/trujillo.png" alt="Logo">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/cif.png" alt="Logo">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/sideChannel.png" alt="Logo">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/medialabPrado.png" alt="Logo">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/ultralab.png" alt="Logo">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/ctif.png" alt="Logo">
+                          </a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Clients -->
+
+                  <div class="white-space-50"></div>
+                </div>
+              </section>
+              <!-- End of About Me Subpage -->
+
+              <!-- Resume Subpage -->
+              <section data-id="resume" class="animated-section">
+                <div class="page-title">
+                  <h2>Experiencia y Formación</h2>
+                </div>
+
+                <div class="section-content">
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-7">
+
+
+
+                      <div class="white-space-50"></div>
+
+                      <div class="block-title">
+                        <h3>Experiencia</h3>
+                      </div>
+
+                      <div class="timeline timeline-second-style clearfix">
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2019 - Actualidad</h5>
+                            <span class="item-company">Wedo-it (IBM Subsidiary)</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Desarrollador</h4>
+                            <p>Desarrollador para Bankia.</p>
+                          </div>
+                        </div>
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2018 - 2019</h5>
+                            <span class="item-company">Arduino</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Formador</h4>
+                            <p>Formador del programa CTC de Arduino.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2017 - 2018</h5>
+                            <span class="item-company">SideChannel</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Desarrollador</h4>
+                            <p>Desarrollos a medida para clientes, consultoría y formación en el ambito de la electrónica.</p>
+                          </div>
+                        </div>
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2016 - 2017</h5>
+                            <span class="item-company">Rockbotic</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Coordinador de recursos</h4>
+                            <p>Coordinador de recursos humanos, logistica y creación de contenidos.</p>
+                          </div>
+                        </div>
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2015 - 2016</h5>
+                            <span class="item-company">Camp Tecnologico</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Coordinador</h4>
+                            <p>Coordinador de la empresa en Madrid.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2012 - 2019</h5>
+                            <span class="item-company">Trastejant</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Fundador de Trastejant</h4>
+                            <p>Diseño y desarrollo de la plataforma, generación de contenidos, ponente en conferencias y formador.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2011</h5>
+                            <span class="item-company">Freelance</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Fundador de la Codeteca</h4>
+                            <p>Desarrollo de la Codeteca, un lugar dónde encontrar y compartir fragmentos de código.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="block-title">
+                        <h3>Formación</h3>
+                      </div>
+
+                      <div class="timeline timeline-second-style clearfix">
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2020</h5>
+                            <span class="item-company">Varios</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Kubernetes, Docker, Jenkins, Gitlab CI/CD, Prometheus, Grafana, OpenTelemetry...</h4>
+                            <p>Metodología y herramientas de devops.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2019</h5>
+                            <span class="item-company">udemy</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Master en JavaScript: JS, jQuery, Angular 7, NodeJS</h4>
+                            <p>Curso de formación en tecnologías basadas en JavaScript.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2018</h5>
+                            <span class="item-company">SION CERTIFICATIONS </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Expert Certified Ethical Hacking</h4>
+                            <p>Titulación de experto en Hacking Ético.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2016</h5>
+                            <span class="item-company">PixelPro</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Master en Wordpress</h4>
+                            <p>Creación de themes, plugin y seguridad para Wordpress.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2015</h5>
+                            <span class="item-company">Universidad Politecnica de Valencia </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Programación Avanzada en Android</h4>
+                            <p>Mi formación cómo programador de APP en Android comezó en 2015 gracias a un curso específico impartido por la UPV. Desde entonces he continuado formandome en esta tecnológica y actualmente cuento con varias APP desarrolladas por mi.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2012</h5>
+                            <span class="item-company">Universidad Complutense de Madrid</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Ingenieria superior en Informática</h4>
+                            <p>Titulación de Ingeniería superior informática por el plan 98.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2009</h5>
+                            <span class="item-company">CAM Getafe</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Desarrollo de aplicaciones Java con IBM Rational Application Developer para WebSphere</h4>
+                            <p>Formación impatida por IBM que trata en profundidad aspectos más avanzados sobre la programación en Java y concretamente su aplicación para webshare.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2008</h5>
+                            <span class="item-company">CAM Getafe</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Programador de aplicaciones orientadas a objetos</h4>
+                            <p>El curso estaba orientado principalmente a la programación en Java pero los conocimientos son extrapolables a cualquier lenguaje POO.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2006</h5>
+                            <span class="item-company">Colegio Salesianos Atocha</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">CISCO CCNA CERTIFICATION</h4>
+                            <p>(Cisco Certified Networking Associate) Una de las certificaciones más importantes dentro de la industria de la Tecnología de la Información. Esta certificación representa el nivel asociado, orientada a habilidades prácticas en el diagnóstico y solución de problemas específicos de redes.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2007</h5>
+                            <span class="item-company">Colegio Salesianos Atocha</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Bachiller de ciencias de la salud</h4>
+                            <p>Modalidad de bachillerato en ciencias de la salud según lo establecido en la LOE.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Skills & Certificates -->
+                    <div class="col-xs-12 col-sm-5">
+                      <!-- Design Skills -->
+                      <div class="block-title">
+                        <h3>Design <span>Skills</span></h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                        <!-- Skill 1 -->
+                        <div class="skill clearfix">
+                          <h4>OpenSCAD</h4>
+                          <div class="skill-value">70%</div>
+                        </div>
+                        <div class="skill-container skill-1">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 1 -->
+
+                        <!-- Skill 2 -->
+                        <div class="skill clearfix">
+                          <h4>FreeCAD</h4>
+                          <div class="skill-value">95%</div>
+                        </div>
+                        <div class="skill-container skill-2">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 2 -->
+
+                        <!-- Skill 3 -->
+                        <div class="skill clearfix">
+                          <h4>GIMP</h4>
+                          <div class="skill-value">80%</div>
+                        </div>
+                        <div class="skill-container skill-3">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 3 -->
+
+                        <!-- Skill 4 -->
+                        <div class="skill clearfix">
+                          <h4>Inkscape</h4>
+                          <div class="skill-value">60%</div>
+                        </div>
+                        <div class="skill-container skill-4">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 4 -->
+
+                      </div>
+                      <!-- End of Design Skills -->
+
+                      <div class="white-space-10"></div>
+
+                      <!-- Coding Skills -->
+                      <div class="block-title">
+                        <h3>Coding <span>Skills</span></h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                        <!-- Skill 5 -->
+                        <div class="skill clearfix">
+                          <h4>JavaScript</h4>
+                          <div class="skill-value">95%</div>
+                        </div>
+                        <div class="skill-container skill-5">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 5 -->
+
+                        <!-- Skill 6 -->
+                        <div class="skill clearfix">
+                          <h4>PHP</h4>
+                          <div class="skill-value">95%</div>
+                        </div>
+                        <div class="skill-container skill-6">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 6 -->
+
+                        <!-- Skill 7 -->
+                        <div class="skill clearfix">
+                          <h4>HTML/CSS</h4>
+                          <div class="skill-value">75%</div>
+                        </div>
+                        <div class="skill-container skill-7">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 7 -->
+
+                        <!-- Skill 8 -->
+                        <div class="skill clearfix">
+                          <h4>Python</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container skill-8">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 8 -->
+
+                        <!-- Skill 9 -->
+                        <div class="skill clearfix">
+                          <h4>C</h4>
+                          <div class="skill-value">60%</div>
+                        </div>
+                        <div class="skill-container skill-9">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 9 -->
+
+                        <!-- Skill 10 -->
+                        <div class="skill clearfix">
+                          <h4>Java</h4>
+                          <div class="skill-value">50%</div>
+                        </div>
+                        <div class="skill-container skill-10">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 10 -->
+
+                        <!-- Skill 16 -->
+                        <div class="skill clearfix">
+                          <h4>GO</h4>
+                          <div class="skill-value">20%</div>
+                        </div>
+                        <div class="skill-container skill-16">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 16 -->
+
+                      </div>
+                      <!-- End of Coding Skills -->
+
+                      <!-- Devops Skills -->
+                      <div class="block-title">
+                        <h3>Devops <span>Skills</span></h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                        <!-- Skill 11 -->
+                        <div class="skill clearfix">
+                          <h4>Docker</h4>
+                          <div class="skill-value">95%</div>
+                        </div>
+                        <div class="skill-container skill-11">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 11 -->
+
+                        <!-- Skill 12 -->
+                        <div class="skill clearfix">
+                          <h4>Jenkins</h4>
+                          <div class="skill-value">85%</div>
+                        </div>
+                        <div class="skill-container skill-12">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 12 -->
+
+                        <!-- Skill 13 -->
+                        <div class="skill clearfix">
+                          <h4>Sonarqube</h4>
+                          <div class="skill-value">60%</div>
+                        </div>
+                        <div class="skill-container skill-13">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 13 -->
+
+                        <!-- Skill 14 -->
+                        <div class="skill clearfix">
+                          <h4>Nexus</h4>
+                          <div class="skill-value">60%</div>
+                        </div>
+                        <div class="skill-container skill-14">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 14 -->
+
+                        <!-- Skill 15 -->
+                        <div class="skill clearfix">
+                          <h4>Kubernetes</h4>
+                          <div class="skill-value">80%</div>
+                        </div>
+                        <div class="skill-container skill-15">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 15 -->
+
+                        <!-- Skill 17 -->
+                        <div class="skill clearfix">
+                          <h4>Gitlab CI/CD</h4>
+                          <div class="skill-value">80%</div>
+                        </div>
+                        <div class="skill-container skill-17">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 17 -->
+                      </div>
+                      <!-- End of devops Skills -->
+
+                      <div class="white-space-10"></div>
+
+                      <!-- Knowledges -->
+                      <div class="block-title">
+                        <h3>Knowledges</h3>
+                      </div>
+
+                      <ul class="knowledges">
+                        <li>Wordpress</li>
+                        <li>Laravel</li>
+                        <li>Flask</li>
+                        <li>Django</li>
+                        <li>CURA</li>
+                        <li>Slic3r</li>
+                        <li>Linux</li>
+                        <li>Windows</li>
+                        <li>Grafana</li>
+                        <li>Prometheus</li>
+                        <li>Loki</li>
+                      </ul>
+                      <!-- End of Knowledges -->
+                    </div>
+                    <!-- End of Skills & Certificates -->
+                  </div>
+
+                  <div class="white-space-50"></div>
+
+                  <!-- Certificates -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>Titulaciones</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <!-- Certificate 1 -->
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="certificate-item clearfix">
+                        <div class="certi-logo">
+                          <img src="img/certificates/Cisco_CCNA.png" alt="logo">
+                        </div>
+
+                        <div class="certi-content">
+                          <div class="certi-title">
+                            <h4>Cisco CCNA</h4>
+                          </div>
+                          <div class="certi-id">
+                            <span>Cisco Certified Networking Associate</span>
+                          </div>
+                          <div class="certi-date">
+                            <span>2005 - 2006</span>
+                          </div>
+                          <div class="certi-company">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Certificate 1 -->
+
+                    <!-- Certificate 2 -->
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="certificate-item clearfix">
+                        <div class="certi-logo">
+                          <img src="img/certificates/docker.png" alt="logo">
+                        </div>
+
+                        <div class="certi-content">
+                          <div class="certi-title">
+                            <h4>Docker</h4>
+                          </div>
+                          <div class="certi-id">
+                            <span>Uso de docker para conterizar aplicaciones</span>
+                          </div>
+                          <div class="certi-date">
+                            <span>19 April 2018</span>
+                          </div>
+                          <div class="certi-company">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Certificate 2 -->
+
+                    <!-- Certificate 3 -->
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="certificate-item clearfix">
+                        <div class="certi-logo">
+                          <img src="img/certificates/ADS.png" alt="logo">
+                        </div>
+
+                        <div class="certi-content">
+                          <div class="certi-title">
+                            <h4>Google ADS</h4>
+                          </div>
+                          <div class="certi-id">
+                            <span>Creación de campañas publicitarias </span>
+                          </div>
+                          <div class="certi-date">
+                            <span>19 April 2018</span>
+                          </div>
+                          <div class="certi-company">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Certificate 3 -->
+
+                    <!-- Certificate 4 -->
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="certificate-item clearfix">
+                        <div class="certi-logo">
+                          <img src="img/certificates/kicad.png" alt="logo">
+                        </div>
+
+                        <div class="certi-content">
+                          <div class="certi-title">
+                            <h4>Kicad</h4>
+                          </div>
+                          <div class="certi-id">
+                            <span>Diseño de circuitos electrónicos</span>
+                          </div>
+                          <div class="certi-date">
+                            <span>19 April 2018</span>
+                          </div>
+                          <div class="certi-company">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Certificate 4 -->
+
+                    <!-- Certificate 5 -->
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="certificate-item clearfix">
+                        <div class="certi-logo">
+                          <img src="img/certificates/js.png" alt="logo">
+                        </div>
+
+                        <div class="certi-content">
+                          <div class="certi-title">
+                            <h4>Master en JS</h4>
+                          </div>
+                          <div class="certi-id">
+                            <span>Master en JavaScript: JS, jQuery, Angular, NodeJS</span>
+                          </div>
+                          <div class="certi-date">
+                            <span>Marzo 2019</span>
+                          </div>
+                          <div class="certi-company">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Certificate 5 -->
+
+                    <!-- Certificate 6 -->
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="certificate-item clearfix">
+                        <div class="certi-logo">
+                          <img src="img/certificates/ELK.png" alt="logo">
+                        </div>
+
+                        <div class="certi-content">
+                          <div class="certi-title">
+                            <h4>ELK Stack</h4>
+                          </div>
+                          <div class="certi-id">
+                            <span>ELK Stack: Elasticsearch, Logstash, Kibana</span>
+                          </div>
+                          <div class="certi-date">
+                            <span>2019</span>
+                          </div>
+                          <div class="certi-company">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Certificate 6 -->
+                    <!-- Certificate 7 -->
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="certificate-item clearfix">
+                        <div class="certi-logo">
+                          <img src="img/certificates/django.png" alt="logo">
+                        </div>
+
+                        <div class="certi-content">
+                          <div class="certi-title">
+                            <h4>Django</h4>
+                          </div>
+                          <div class="certi-id">
+                            <span>Desarrollo Web Backend en Python con Django</span>
+                          </div>
+                          <div class="certi-date">
+                            <span>Noviembre 2020</span>
+                          </div>
+                          <div class="certi-company">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Certificate 7 -->
+                    <!-- Certificate 8 -->
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="certificate-item clearfix">
+                        <div class="certi-logo">
+                          <img src="img/certificates/android.png" alt="logo">
+                        </div>
+
+                        <div class="certi-content">
+                          <div class="certi-title">
+                            <h4>Android</h4>
+                          </div>
+                          <div class="certi-id">
+                            <span>Master Desarrollo Android con Java y Kotlin</span>
+                          </div>
+                          <div class="certi-date">
+                            <span>April 2020</span>
+                          </div>
+                          <div class="certi-company">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Certificate 8 -->
+                  </div>
+                  <!-- End of Certificates -->
+                </div>
+              </section>
+              <!-- End of Resume Subpage -->
+
+              <!-- Portfolio Subpage -->
+              <section data-id="portfolio" class="animated-section">
+                <div class="page-title">
+                  <h2>Portfolio</h2>
+                </div>
+
+                <div class="section-content">
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <!-- Portfolio Content -->
+                      <div class="portfolio-content">
+
+                        <ul class="portfolio-filters">
+                          <li class="active">
+                            <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_detailed">Detailed</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_mockups">Mockups</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">YouTube Videos</a>
+                          </li>
+                        </ul>
+
+                        <!-- Portfolio Grid -->
+                        <div class="portfolio-grid three-columns">
+
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/7.jpg" alt="Trastejant" title=""/>
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Trastejant</h4>
+                            <span class="category">Detailed</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/nami_logo.jpg" alt="NaMi" title="" />
+                              <a href="portfolio-nami.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">NaMi</h4>
+                            <span class="category">Detailed</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/9.jpg" alt="Trastejant" title="" />
+                              <a href="portfolio-codeteca.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">La Codeteca</h4>
+                            <span class="category">Detailed</span>
+                          </figure>
+<!-- Segunda fila -->
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/hermes.png" alt="Hermes" title="" />
+                              <a href="portfolio-hermes.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Hermes</h4>
+                            <span class="category">Detailed</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/11.jpg" alt="Jarwis" title="" />
+                              <a href="portfolio-jarwis.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Jarwis</h4>
+                            <span class="category">Detailed</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/speedRecord.png" alt="Speed Recorder" title="" />
+                              <a href="portfolio-speedRecorder.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Speed Recorder</h4>
+                            <span class="category">Detailed</span>
+                          </figure>
+
+<!-- Tercera fila -->
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/keymera.png" alt="Keymera" title="" />
+                              <a href="portfolio-keymera.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Keymera</h4>
+                            <span class="category">Detailed</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/bot.png" alt="Bot" title="" />
+                              <a href="portfolio-LiveGame.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Live Game</h4>
+                            <span class="category">Detailed</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/room2Learn.png" alt="Roon2Learn" title="" />
+                              <a href="portfolio-room2Learn.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Room2Learn</h4>
+                            <span class="category">Detailed</span>
+                          </figure>
+
+<!-- Cuarta fila -->
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/10.jpg" alt="Trasbot" title="" />
+                              <a href="portfolio-TrasBot.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">TrasBot</h4>
+                            <span class="category">Detailed</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/12.jpg" alt="Notillus" title="" />
+                              <a href="portfolio-notillus.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Notillus</h4>
+                            <span class="category">Detailed</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/13.jpg" alt="YouTube" title="" />
+                              <a href="portfolio-youtube.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Youtube</h4>
+                            <span class="category">Detailed</span>
+                          </figure>
+
+                          <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/5.jpg" alt="Mockup Design 1" title="" />
+                              <a class="lightbox" title="Mockup Design 1" href="img/portfolio/full/5.jpg"></a>
+                            </div>
+
+                            <i class="far fa-image"></i>
+                            <h4 class="name">GluApp</h4>
+                            <span class="category">Mockups</span>
+                          </figure>
+
+                          <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/5.jpg" alt="Mockup Design 1" title="" />
+                              <a class="lightbox" title="Mockup Design 1" href="img/portfolio/full/5.jpg"></a>
+                            </div>
+
+                            <i class="far fa-image"></i>
+                            <h4 class="name">Since When</h4>
+                            <span class="category">Mockups</span>
+                          </figure>
+
+                          <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/14.jpg" alt="Mockup Design 1" title="" />
+                              <a class="lightbox" title="Mockup Design 1" href="img/portfolio/full/5.jpg"></a>
+                            </div>
+
+                            <i class="far fa-image"></i>
+                            <h4 class="name">Manual de supervivencia Maker</h4>
+                            <span class="category">Mockups</span>
+                          </figure>
+<!--
+                          <figure class="item lbvideo" data-groups='["category_all", "category_vimeo-videos"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/3.jpg" alt="Vimeo Video 1" title="" />
+                              <a href="https://player.vimeo.com/video/158284739" class="lightbox mfp-iframe" title="Vimeo Video 1"></a>
+                            </div>
+
+                            <i class="fas fa-video"></i>
+                            <h4 class="name">Vimeo Video 1</h4>
+                            <span class="category">Vimeo Videos</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/4.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Detailed Project 1</h4>
+                            <span class="category">Detailed</span>
+                          </figure>
+
+                          <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/5.jpg" alt="Mockup Design 1" title="" />
+                              <a class="lightbox" title="Mockup Design 1" href="img/portfolio/full/5.jpg"></a>
+                            </div>
+
+                            <i class="far fa-image"></i>
+                            <h4 class="name">Mockup Design 1</h4>
+                            <span class="category">Mockups</span>
+                          </figure>
+
+                          <figure class="item lbvideo" data-groups='["category_all", "category_youtube-videos"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/6.jpg" alt="YouTube Video 1" title="" />
+                              <a href="https://www.youtube.com/embed/bg0gv2YpIok" class="lightbox mfp-iframe" title="YouTube Video 1"></a>
+                            </div>
+
+                            <i class="fas fa-video"></i>
+                            <h4 class="name">YouTube Video 1</h4>
+                            <span class="category">YouTube Videos</span>
+                          </figure>
+                        -->
+                        </div>
+                      </div>
+                      <!-- End of Portfolio Content -->
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- End of Portfolio Subpage -->
+
+              <!-- Blog Subpage -->
+              <section data-id="blog" class="animated-section">
+                <div class="page-title">
+                  <h2>Blog</h2>
+                </div>
+
+                <div class="section-content">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="blog-masonry two-columns clearfix">
+
+                        <!-- Blog Post 1 -->
+                        <div class="item post-1">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in Design">Competición</a>
+                              </div>
+                              <a href="blog/sumo.html">
+                                <img src="img/blog/japan.jpg" class="size-blog-masonry-image-two-c" alt="Why I Switched to Sketch For UI Design" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">2015</div>
+                              <a href="blog/sumo.html">
+                                <h4 class="blog-item-title">All Japan Sumo Tournament</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 1 -->
+
+                        <!-- Blog Post 2 -->
+                        <div class="item post-2">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in UI">Conferencia</a>
+                              </div>
+                              <a href="blog/robolid.html">
+                                <img src="img/blog/robolid.jpg" class="size-blog-masonry-image-two-c" alt="Best Practices for Animated Progress Indicators" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">2014</div>
+                              <a href="blog/robolid.html">
+                                <h4 class="blog-item-title">Robolid</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 2 -->
+
+                        <!-- Blog Post 3 -->
+                        <div class="item post-1">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in Design">Conferencia</a>
+                              </div>
+                              <a href="blog/granabot.html">
+                                <img src="img/blog/granabot.jpg" class="size-blog-masonry-image-two-c" alt="Designing the Perfect Feature Comparison Table" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">06 Feb 2020</div>
+                              <a href="blog/granabot.html">
+                                <h4 class="blog-item-title">Granabot</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 3 -->
+
+                        <!-- Blog Post 4 -->
+                        <div class="item post-2">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in E-Commerce">Conferencia</a>
+                              </div>
+                              <a href="blog/malakabot.html">
+                                <img src="img/blog/malakabot.jpg" class="size-blog-masonry-image-two-c" alt="An Overview of E-Commerce Platforms" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">07 Jan 2020</div>
+                              <a href="blog/malakabot.html">
+                                <h4 class="blog-item-title">Malabot</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 4 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </section>
+              <!-- End of Blog Subpage -->
+
+              <!-- Contact Subpage -->
+              <section data-id="contact" class="animated-section">
+                <div class="page-title">
+                  <h2>Contacto</h2>
+                </div>
+
+                <div class="section-content">
+
+                  <div class="row">
+                    <!-- Contact Info -->
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-map-marker"></i>
+                        <h4>Madrid</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+                      <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="david-martin-peral-2870a161" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://es.linkedin.com/in/david-martin-peral-2870a161?trk=profile-badge">David Martin Peral</a></div>
+
+<!--
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-envelope"></i>
+                        <h4>nano@trastejant.com</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+-->
+                    </div>
+                    <!-- End of Contact Info -->
+
+                    <!-- Contact Form -->
+                    <div class="col-xs-12 col-sm-8">
+
+                      <div class="block-title">
+                        <h3>How Can I <span>Help You?</span></h3>
+                      </div>
+
+                      <form id="contact_form" class="contact-form" action="contact_form/contact_form.php" method="post">
+
+                        <div class="messages"></div>
+
+                        <div class="controls two-columns">
+                          <div class="fields clearfix">
+                            <div class="left-column">
+                              <div class="form-group form-group-with-icon">
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Name is required.">
+                                <label>Full Name</label>
+                                <div class="form-control-border"></div>
+                                <div class="help-block with-errors"></div>
+                              </div>
+
+                              <div class="form-group form-group-with-icon">
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
+                                <label>Email Address</label>
+                                <div class="form-control-border"></div>
+                                <div class="help-block with-errors"></div>
+                              </div>
+
+                              <div class="form-group form-group-with-icon">
+                                <input id="form_subject" type="text" name="subject" class="form-control" placeholder="" required="required" data-error="Subject is required.">
+                                <label>Subject</label>
+                                <div class="form-control-border"></div>
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                            <div class="right-column">
+                              <div class="form-group form-group-with-icon">
+                                <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Please, leave me a message."></textarea>
+                                <label>Message</label>
+                                <div class="form-control-border"></div>
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-theme="dark"></div>
+
+                          <input type="submit" class="button btn-send" value="Send message">
+                        </div>
+                      </form>
+                    </div>
+                    <!-- End of Contact Form -->
+                  </div>
+
+                </div>
+              </section>
+              <!-- End of Contact Subpage -->
             </div>
           </div>
-        </div>
-        </div>
 
-        <!-- Fin del Proyecto 2 -->
-
-        <!-- Proyecto 3 -->
-        <div class="col">
-          <div class="animate__bounceIn">
-          <div class="card shadow-sm">
-            <img src="img/undraw_speed_test_wxl0.svg"/>
-            <div class="card-body">
-              <h5 class="card-title">Speed Recorder</h5>
-              <p class="card-text">Test y registro de datos sobre la conexión a internet.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#speedRecorderModal" data-bs-whatever="@mdo">Saber Más</button>
-                </div>
-                <a href="https://github.com/crakernano/speed-recorder" target="_blank" style="color:black">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                  </svg>
-                </a>
-
-                <a href="https://crakernano.github.io/speed-recorder/" target="_blank" style="color:black"><img src="img/website.svg" width="32px"/> </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <!-- Fin del Proyecto 3 -->
-
-        <!-- Proyecto 4 -->
-        <div class="col">
-          <div class="animate__bounceIn">
-          <div class="card shadow-sm">
-            <img src="img/undraw_hacker_mind_6y85.svg"/>
-            <div class="card-body">
-              <h5 class="card-title">Keymera</h5>
-              <p class="card-text">Keymera is a suit for ethical hacking. The purpose of this software is to detect vulnerabilities.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#keymeraModal" data-bs-whatever="@mdo">Saber Más</button>
-                </div>
-                <a href="https://github.com/crakernano/keymera" target="_blank" style="color:black">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                  </svg>
-                </a>
-
-                <a href="https://crakernano.github.io/keymera/" target="_blank" style="color:black"><img src="img/website.svg" width="32px"/> </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <!-- Fin del Proyecto 4 -->
-
-        <!-- Proyecto 5 -->
-        <div class="col">
-          <div class="animate__bounceIn">
-          <div class="card shadow-sm">
-            <img src="img/undraw_Chat_bot_re_e2gj.svg" width="90%"/>
-            <div class="card-body">
-              <h5 class="card-title">Live Game</h5>
-              <p class="card-text">Pequeño ejemplo del "juego de la vida" implementado durante un directo de dotcsv en twitch.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#speedRecorderModal" data-bs-whatever="@mdo">Saber Más</button>
-                </div>
-                <a href="https://github.com/crakernano/speed-recorder" target="_blank" style="color:black">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                  </svg>
-                </a>
-                <a href="#" target="_blank" style="color:black"><img src="img/website.svg" width="32px"/> </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <!-- Fin del Proyecto 5 -->
-
-        <!-- Proyecto 6 -->
-        <div class="col">
-          <div class="animate__bounceIn">
-          <div class="card shadow-sm">
-            <img src="img/undraw_video_game_night_8h8m.svg"/>
-            <div class="card-body">
-              <h5 class="card-title">Room2Learn</h5>
-              <p class="card-text">Aplicación para gamificar contenidos curriculares de la ESO y Bachillerato.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Room2LearnModal" data-bs-whatever="@mdo">Saber Más</button>
-                </div>
-                <a href="https://github.com/NaMiTech/Scape-room" target="_blank" style="color:black">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                  </svg>
-                </a>
-                <a href="https://namitech.github.io/Room2Learn/" target="_blank" style="color:black"><img src="img/website.svg" width="32px"/> </a>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <!-- Fin del Proyecto 6 -->
-
-
-        <!-- MIS SITIOS -->
-        <div class="container-fluid" style="margin-top:5rem;">
-            <h2 class="sites-title"> Mis sitios </h2>
-
-        	<div class="row">
-        		<div class="col-md-4">
-                    <figure>
-                        <a href="https://trastejant.com" target="_blank">
-                            <img alt="Trastejant" src="img/trastejant.png" width="100px">
-                        </a>
-                        <figcaption>Trastejant</figcaption>
-                    </figure>
-
-        		</div>
-        		<div class="col-md-4">
-                    <figure>
-                        <a href="https://nami-tech.es" target="_blank">
-                        <img alt="NaMi" src="img/nami.png" width="100px">
-                        </a>
-                        <figcaption>NaMi Tech</figcaption>
-                    </figure>
-
-        		</div>
-        		<div class="col-md-4">
-                    <figure>
-                        <a href="http://www.lacodeteca.es/" target="_blank">
-                            <img alt="La Codeteca" src="http://www.lacodeteca.es/blog/wp-content/themes/codeteca/library/images/lacodeteca.png"/ width="250px">
-                        </a>
-                    </figure>
-
-        		</div>
-        	</div>
-        </div>
-</main>
-
-<footer class="text-muted py-5" style="box-shadow: 20px 1px 10px white;">
-  <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-          © 2021 All rights reserved.
-        </div>
-        <div class="col-md-4">
-            .
-        </div>
-        <div class="col-md-4">
-            ¿Te gustan las imagenes? son de <a href="https://undraw.co/" target="_blank">undraw.co</a>
-        </div>
-    </div>
-  </div>
-</footer>
-
-
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-<!--MODAL HERMES -->
-    <div class="modal fade" id="hermesModal" tabindex="-1" aria-labelledby="hermesModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="hermesModalLabel">Hermes</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <center><img src="img/undraw_contact_us_15o2.svg" width="75%"></center>
-              </div>
-              <div class="mb-3">
-                <img src="https://github.com/crakernano/keymera/actions/workflows/python-app.yml/badge.svg" />
-                <hr>
-                <p>Gestor de comunicaciones. Permite enviar mensajes mediante distintos medios (Slack, e-mail, Telegram, Firebase...).</p>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
       </div>
     </div>
-<!--FIN DEL MODAL HERMES -->
 
-<!--MODAL JARWIS -->
-    <div class="modal fade" id="jarwisModal" tabindex="-1" aria-labelledby="jarwisModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="jarwisModalLabel">Jarwis</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <img src="img/jarvisLogo.png" width="200px">
-              </div>
-              <div class="mb-3">
-                <p>Domotización economica y open source.</p>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-<!--FIN DEL MODAL JARWIS -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/animating.js"></script>
 
-<!--MODAL SpeedRecorder -->
-    <div class="modal fade" id="speedRecorderModal" tabindex="-1" aria-labelledby="speedRecorderModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="speedRecorderModalLabel">Speed Recorder</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <img src="img/undraw_speed_test_wxl0.svg" width="75%">
-              </div>
-              <div class="mb-3">
-                <p>Test y registro de datos sobre la conexión a internet.</p>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-<!--FIN DEL MODAL Speed Recorder -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
-<!--MODAL Keymera -->
-    <div class="modal fade" id="keymeraModal" tabindex="-1" aria-labelledby="keymeraModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="keymeraModalLabel">Keymera</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <center><img src="img/undraw_hacker_mind_6y85.svg" width="70%"></center>
-              </div>
-              <div class="mb-3">
+    <script src='js/perfect-scrollbar.min.js'></script>
+    <script src='js/jquery.shuffle.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
 
-                <img src="https://github.com/crakernano/keymera/actions/workflows/python-app.yml/badge.svg" />
-                <img src="https://github.com/crakernano/keymera/actions/workflows/main.yml/badge.svg" />
-                <img src="https://img.shields.io/github/v/tag/crakernano/keymera?sort=date" />
-                <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg" />
-                <hr>
-                <p>Keymera is a suit for ethical hacking. The purpose of this software is to detect vulnerabilities.</p>
-
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-<!--FIN DEL MODAL Keymera -->
-
-<!--MODAL Room2Learn -->
-    <div class="modal fade" id="Room2LearnModal" tabindex="-1" aria-labelledby="Room2LearnModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="Room2LearnModalLabel">Room2Learn</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <img src="img/undraw_video_game_night_8h8m.svg" width="75%">
-              </div>
-              <div class="mb-3">
-                <p>Aplicación para gamificar contenidos curriculares de la ESO y Bachillerato.</p>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-<!--FIN DEL MODAL Room2Learn -->
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+    <script src="js/jquery.googlemap.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
