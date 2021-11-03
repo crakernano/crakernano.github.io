@@ -61,7 +61,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #eee;
+  color: #eee !important;
   font-family: 'Poppins', Helvetica, sans-serif;
   font-weight: 600;
 }
@@ -97,6 +97,7 @@ a {
 
 p {
   margin-bottom: 10px;
+  color: #d5d5d5 !important;
 }
 
 .clearfix:before,
@@ -3023,9 +3024,16 @@ blockquote {
 
 .features{
   margin-top: 3rem;
-  background-color: white;
+  /*background-color: white;*/
   padding: 0.5rem;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
   margin-right: 5px;
+}
+
+.features img{
+  background-color: White;
+  border-radius: 100px;
+  padding: 10px;
+  height: 50px !important;
 }
