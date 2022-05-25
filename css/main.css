@@ -1334,7 +1334,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .skills-second-style .skill-container.skill-5 .skill-percentage {
-  width: 95%; /* JavaScript*/
+  width: 70%; /* React*/
 }
 
 .skills-second-style .skill-container.skill-6 .skill-percentage {
@@ -1342,7 +1342,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .skills-second-style .skill-container.skill-7 .skill-percentage {
-  width: 75%; /* HTML */
+  width: 90%; /* Flutter */
 }
 
 .skills-second-style .skill-container.skill-8 .skill-percentage {
@@ -3046,4 +3046,11 @@ hr.multiProyect {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+@media only screen and (max-width: 1024px) {
+  .features img{
+    margin-top: 3rem;
+    display: none;
+  }
 }
